@@ -1,0 +1,41 @@
+/**
+ * @name Discord Refresh Fix
+ * @version 1
+ * @author djxnzi
+ * @description Fixes discord's refreshed stylesheet.
+*/
+
+./* Hide top bar */
+.visual-refresh .title__85643 {
+    display: none;
+}
+
+/* Move bookmarks down */
+.trailing_c38106, .winButtons_c38106 {
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 4px;
+    z-index: 1000;
+}
+
+/* Adjust position for bookmarks */
+.visual-refresh .toolbar__9293f {
+    padding-right: 38px;
+}
+
+/* Reposition main app container */
+@supports (grid-template-columns:subgrid) {
+    .visual-refresh .content_c48ade,
+    .visual-refresh .sidebarListRounded_c48ade,
+    .visual-refresh .page_c48ade {
+        margin-top: -24px;
+        height: calc(100% + 24px);
+    }
+}
+
+/* Fix the user area */
+.visual-refresh .panels_c48ade {
+    width: 286px;
+    margin-left: 74px;
+}
