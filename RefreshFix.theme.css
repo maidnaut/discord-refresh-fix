@@ -12,7 +12,7 @@
 
 /* Move bookmarks down */
 .trailing_c38106, .winButtons_c38106 {
-    display: block;
+    display: flex;
     position: relative;
     top: 18px;
     left: 4px;
@@ -21,7 +21,7 @@
 
 /* Adjust position for bookmarks */
 .visual-refresh .toolbar__9293f {
-    padding-right: 38px;
+    padding-right: 84px;
 }
 
 /* Reposition main app container */
